@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Machine Learning weights
+*.pt
+*.onnx
+
+# Input/Output media directories (contents ignored except .gitkeep)
+input_videos/*
+!input_videos/.gitkeep
+output_videos/*
+!output_videos/.gitkeep
+screenshots/*
+!screenshots/.gitkeep
+
+# IDE configuration
+.vscode/
+.idea/
+
+# Environment
+venv/
+.venv/
+env/
+.env
