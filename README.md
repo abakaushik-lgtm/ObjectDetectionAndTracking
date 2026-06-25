@@ -97,19 +97,26 @@ pip install -r requirements.txt
 
 ## 💻 How to Run the Project
 
-### 1. Tracking on Webcam (Real-time)
+### 1. Streamlit Web Dashboard (Recommended)
+Launch the interactive web-based dashboard on your local browser:
+```bash
+streamlit run app.py
+```
+This starts the local web server and opens a graphical UI where you can upload video files, toggle target classes, tweak tracking parameters in real-time, and download the processed output.
+
+### 2. Command Line Interface - Webcam (Real-time)
 To execute tracking using your default webcam (source index `0`), run:
 ```bash
 python main.py --source 0
 ```
 
-### 2. Tracking on a Video File
+### 3. Command Line Interface - Video File
 Place your raw video inside the `input_videos/` folder, and pass its path to the script:
 ```bash
 python main.py --source input_videos/traffic.mp4
 ```
 
-### 3. Command Line Arguments
+### 4. Command Line Arguments
 Custom configurations can be supplied directly from the terminal:
 ```bash
 python main.py --source input_videos/traffic.mp4 --model models/yolov8s.pt --conf 0.40 --max-age 7 --min-hits 3
